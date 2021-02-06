@@ -73,4 +73,4 @@ From the above distribution of tweets, we can see that most of the tweets were r
 
 * Distribution of negative and positive tweets about each political party
 
-<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/ditribution_neg_pos_political_parties.png" alt="Gender of Respondents" width="1000" height="300">
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/ditribution_neg_pos_political_parties.png" alt="Gender of Respondents" width="900" height="400">
