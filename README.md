@@ -57,9 +57,20 @@ We will look for certain keywords in a tweet to classify the tweet with a politi
 
 ### 2. Exploratory Data Analysis
 
-The following bar plot describes the number of reasons which were given to the tweets to be negative. 
+* The following bar plot describes the number of reasons which were given to the tweets to be negative. 
 
-<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/neg_reason_count.png" alt="Gender of Respondents" width="1000" height="400">
-
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/neg_reason_count.png" alt="Gender of Respondents" width="1000" height="300">
 
 We can see that most of the tweets written about the political parties (apart from 'others') were related to scandals made by the politicians followed by the lies they made by promising earlier and not fulfilling it later.
+
+
+* Distribution of the political affiliations of the tweets
+
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/distribution_political_affiliations.png" alt="Gender of Respondents" width="1000" height="300">
+
+From the above distribution of tweets, we can see that most of the tweets were related to the Conservative party followed by the Liberals. The maximum number of tweets were related to the elections but did not affiliate any of the political party. NDP had the least number of tweets which means that people were least interested with them.
+
+
+* Distribution of negative and positive tweets about each political party
+
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/ditribution_neg_pos_political_parties.png" alt="Gender of Respondents" width="900" height="500">
