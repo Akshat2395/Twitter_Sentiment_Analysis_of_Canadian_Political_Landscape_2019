@@ -73,7 +73,7 @@ From the above distribution of tweets, we can see that most of the tweets were r
 
 * Distribution of negative and positive tweets about each political party
 
-<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/ditribution_neg_pos_political_parties.png" width="900" height="300">
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/ditribution_neg_pos_political_parties.png" width="900" height="350">
 
 The above pie chart describes the distribution of positive and negative tweets about each political party they represent. From the first pie chart, the conservatives had to bear the most as they received the maximum number of negative tweets followed by the Liberals. On the other hand, the Liberals and Conservatives were also favoured the most as they both received almost the same number of positive tweets.
 
