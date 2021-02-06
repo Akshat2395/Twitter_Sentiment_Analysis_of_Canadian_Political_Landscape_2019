@@ -104,12 +104,32 @@ In this section, I have implemented various ML models to classify tweets. Hyperp
 
 From the above bar chart, we can see that the Logistic regression and SVC model have the highest accuracy on the test set for both word frequency (TF) and TF-IDF as features. Hence I went with the features provided by TF-IDF and implement Logistic regression on the Canadian Elections data set.
 
+Moreover, the reasons of the tweets to be negative were grouped together to predict their sentiments.
+
 ### 5. Result
 
-**How each party is viewed in the public eye based on the sentiment value?**
+* **How each party is viewed in the public eye based on the sentiment value?**
 
 <img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/distribution_neg_tweets.png" alt="Gender of Respondents" width="900" height="400">
 
 This is substantiated from the above graph that most of the negative tweets of the Conservative party are categorized as 'Scandal' and 'Tell Lies' whereas most of the negative tweets for the rest of the parties are in 'Others' category.
 
 This shows that the public associated the Conservative party with deceit, scandalous and lies in their tweets. The same can be said for Liberal party but it is not to the same extent as that of the Conservative party.
+
+
+* **Provide a few reasons why your model may fail to predict the correct negative reasons.**
+
+Count of grouped reasons - 
+
+Climate Problem     41
+Economy             63
+Healthcare          54
+Manipulative       214
+Others             364
+Scandalous         270
+
+It can be inferred that the count of reasons is disproportionate. Half of the reasons have very less samples as compared to the rest. Hence the data is skewed which means our model has very few tweets of 'Climate Problem', 'Economy' and 'Healthcare' to model on. Therefore, as we got few samples per class to build our model, we obtain a low accuracy in our model.
+
+* There is no improvement in accuracies from word embeddings except for Decision Trees where we see an improvement in accuracy of around 6%.
+
+* Using Uni and Tri-grams (ngram_range=(1,3)), we observed that the accuracies of all the models have increased by a significant amount.
