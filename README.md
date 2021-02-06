@@ -29,7 +29,7 @@ The second data set, Canadian_elections_2019.csv, contains a list of tweets rega
 Both datasets have been collected directly from the web.
 
 
-### 1. Data cleaning and preparation
+### 1. Data Cleaning and Preparation
 
 The steps taken to perform data cleaning are- 
 1. All text in lowercase
@@ -74,3 +74,32 @@ From the above distribution of tweets, we can see that most of the tweets were r
 * Distribution of negative and positive tweets about each political party
 
 <img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/ditribution_neg_pos_political_parties.png" alt="Gender of Respondents" width="900" height="400">
+
+The above pie chart describes the distribution of positive and negative tweets about each political party they represent. From the first pie chart, the conservatives had to bear the most as they received the maximum number of negative tweets followed by the Liberals. On the other hand, the Liberals and Conservatives were also favoured the most as they both received almost the same number of positive tweets.
+
+
+### 3. Model Preparation
+
+As ML models cannot understand english words, the inputs should be converted to a set of numbers which represent those english words/sentences. 
+To do so, here we used TF and TF-IDF.
+1. **TF (Term Frequency)** - 
+Term frequency is the number of times a particular word appears in a document. Since every document is different in length, it is possible that a term would appear more often in longer documents than shorter ones. Thus, term frequency is often divided by the total number of terms in the document as a way of normalization.
+
+2. **TF-IDF** - 
+Tf-idf stands for term frequency-inverse document frequency, and the tf-idf weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
+
+3. **Word Embeddings** - 
+A word embedding is a learned representation for text where words that have the same meaning have a similar representation. Word embeddings are in fact a class of techniques where individual words are represented as real-valued vectors in a predefined vector space. Each word is mapped to one vector and the vector values are learned in a way that resembles a neural network, and hence the technique is often lumped into the field of deep learning.
+
+Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
+
+4. **N-grams** - 
+An N-gram model predicts the occurrence of a word based on the occurrence of its N – 1 previous words. It can also be defined as a contiguous sequence of N items from a given sample of text or speech. Here an item can be a character, a word or a sentence and N can be any integer. When N is 2, we call the sequence a bigram. Similarly, a sequence of 3 items is called a trigram, and so on.
+
+### 4. Model Implementation
+
+In this section, I have implemented various ML models to classify tweets. Hyperparameter tuning was also conducted using GridSearchCV. The models implemented and their performance is shown below.
+
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/accuracy_algorithms.png" alt="Gender of Respondents" width="700" height="400">
+
+From the above bar chart, we can see that the Logistic regression and SVC model have the highest accuracy on the test set for both word frequency (TF) and TF-IDF as features. Hence we will go with the features provided by TF-IDF and implement Logistic regression on the Canadian Elections data set.
