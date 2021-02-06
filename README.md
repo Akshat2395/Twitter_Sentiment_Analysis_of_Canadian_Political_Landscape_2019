@@ -102,4 +102,14 @@ In this section, I have implemented various ML models to classify tweets. Hyperp
 
 <img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/accuracy_algorithms.png" alt="Gender of Respondents" width="700" height="400">
 
-From the above bar chart, we can see that the Logistic regression and SVC model have the highest accuracy on the test set for both word frequency (TF) and TF-IDF as features. Hence we will go with the features provided by TF-IDF and implement Logistic regression on the Canadian Elections data set.
+From the above bar chart, we can see that the Logistic regression and SVC model have the highest accuracy on the test set for both word frequency (TF) and TF-IDF as features. Hence I went with the features provided by TF-IDF and implement Logistic regression on the Canadian Elections data set.
+
+### 5. Result
+
+**How each party is viewed in the public eye based on the sentiment value?**
+
+<img src="https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/blob/main/images/distribution_neg_tweets.png" alt="Gender of Respondents" width="900" height="400">
+
+This is substantiated from the above graph that most of the negative tweets of the Conservative party are categorized as 'Scandal' and 'Tell Lies' whereas most of the negative tweets for the rest of the parties are in 'Others' category.
+
+This shows that the public associated the Conservative party with deceit, scandalous and lies in their tweets. The same can be said for Liberal party but it is not to the same extent as that of the Conservative party.
