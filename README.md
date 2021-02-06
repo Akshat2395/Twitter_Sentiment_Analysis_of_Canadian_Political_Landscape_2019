@@ -57,8 +57,8 @@ We will look for certain keywords in a tweet to classify the tweet with a politi
 
 ### 2. Exploratory Data Analysis
 
-The above bar plot describes the number of reasons which were given to the tweets to be negative. 
+The following bar plot describes the number of reasons which were given to the tweets to be negative. 
 
-<img src="https://github.com/Akshat2395/Data-Scientist-Salary-Prediction/blob/main/images/Gender_distribution_wrt_job_profile.png" alt="Gender of Respondents" width="300" height="300">
+<img src=https://github.com/Akshat2395/Twitter_Sentiment_Analysis_of_Canadian_Political_Landscape_2019/tree/main/images/neg_reason_count.png" alt="Gender of Respondents" width="1000" height="400">
 
 We can see that most of the tweets written about the political parties (apart from 'others') were related to scandals made by the politicians followed by the lies they made by promising earlier and not fulfilling it later.
